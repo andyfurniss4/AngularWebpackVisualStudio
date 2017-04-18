@@ -3,11 +3,9 @@ using AngularWebpackVisualStudio.Models;
 using AngularWebpackVisualStudio.Utilities;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
-using System.Collections.Generic;
-using System.Linq;
-using System.Collections;
-using System.Net;
 using Newtonsoft.Json.Linq;
+using System.Collections.Generic;
+using System.Net;
 
 namespace AngularWebpackVisualStudio.Services
 {

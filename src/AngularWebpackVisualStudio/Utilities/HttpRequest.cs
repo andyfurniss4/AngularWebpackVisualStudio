@@ -1,5 +1,4 @@
 ﻿using AngularWebpackVisualStudio.Configuration;
-using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Concurrent;

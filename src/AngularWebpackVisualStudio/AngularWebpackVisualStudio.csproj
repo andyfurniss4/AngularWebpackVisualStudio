@@ -5,6 +5,7 @@
   <ItemGroup>
     <Folder Include="angularApp\app\helpers\" />
     <Folder Include="angularApp\app\shared\components\generic-table\" />
+    <Folder Include="angularApp\images\" />
     <Folder Include="Repositories\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>

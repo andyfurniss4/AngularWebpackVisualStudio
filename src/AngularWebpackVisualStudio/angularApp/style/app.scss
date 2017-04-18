@@ -2,8 +2,14 @@ a {
     color: #03A9F4;
 }
 
-.row.padded-top {
-    padding-top: 30px;
+.row {
+    &.padded-top {
+        padding-top: 20px;
+    }
+
+    &.padded-bottom {
+        padding-top: 20px;
+    }
 }
 
 .loader {

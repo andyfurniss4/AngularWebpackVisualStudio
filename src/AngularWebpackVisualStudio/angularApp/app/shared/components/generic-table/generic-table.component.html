@@ -1,0 +1,25 @@
+﻿<div class="table-generic-wrapper" *ngIf="records">
+    <h4 *ngIf="title">{{ title }}</h4>
+    <table class="table table-generic">
+        <thead>
+            <tr>
+                <th *ngFor="let key of keys">{{ key }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let record of pageRecords()">
+                <td *ngFor="let key of keys">{{ record[key] }}</td>
+            </tr>
+            <ng-container *ngIf="padEmptyRows">
+                <tr *ngFor="let row of rowsToPad() | loopArray" class="row-filler">
+                    <td *ngFor="let key of keys"></td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+    <div *ngIf="records.length > resultsPerPage" class="control-group pull-right">
+        <span>Displaying {{currentRangeMin()}}-{{currentRangeMax()}} of {{records.length}} results</span>
+        <button type="button" class="btn btn-primary" [disabled]="currentPage === 1" (click)="currentPage = currentPage - 1"><</button>
+        <button type="button" class="btn btn-primary" [disabled]="currentPage === lastPage()" (click)="currentPage = currentPage + 1">></button>
+    </div>
+</div>

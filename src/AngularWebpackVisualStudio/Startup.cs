@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using AngularWebpackVisualStudio.Services;
+using AngularWebpackVisualStudio.Configuration;
 
 namespace Angular2WebpackVisualStudio
 {
@@ -38,7 +40,12 @@ namespace Angular2WebpackVisualStudio
                     });
             });
 
+            // Add config
+            services.AddOptions();
+            services.Configure<HttpAuthorisationConfig>(Configuration.GetSection("DynamicsAuthorisationConfig"));
+
             // Add framework services.
+            services.AddTransient<IDynamicsSearchService, DynamicsSearchService>();
             services.AddMvc();
         }
 
@@ -50,7 +57,6 @@ namespace Angular2WebpackVisualStudio
 
             var angularRoutes = new[] {
                  "/home",
-                 "/about",
                  "/dynamics-search"
              };
 

@@ -1,4 +1,3 @@
-import { CustomFooterComponent } from './components/customfooter/customfooter.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { RouterModule } from '@angular/router';
 import { NgModule, ModuleWithProviders } from '@angular/core';
@@ -11,13 +10,11 @@ import { CommonModule } from '@angular/common';
     ],
 
     declarations: [
-        NavigationComponent,
-        CustomFooterComponent
+        NavigationComponent
     ],
 
     exports: [
-        NavigationComponent,
-        CustomFooterComponent
+        NavigationComponent
     ]
 })
 

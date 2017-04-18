@@ -3,6 +3,9 @@
     <TargetFramework>netcoreapp1.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="angularApp\app\helpers\" />
+    <Folder Include="angularApp\app\shared\components\generic-table\" />
+    <Folder Include="Repositories\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>

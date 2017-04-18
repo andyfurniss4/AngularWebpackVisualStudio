@@ -19,6 +19,8 @@ a {
 }
 
 .loader {
+    display: block;
+    margin: 0 auto;
     border: 8px solid #f3f3f3; /* Light grey */
     border-top: 8px solid #3498db; /* Blue */
     border-bottom: 8px solid #3498db; /* Blue */
@@ -35,5 +37,11 @@ a {
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+.table-generic {
+    .row-filler {
+        height: 37px;
     }
 }

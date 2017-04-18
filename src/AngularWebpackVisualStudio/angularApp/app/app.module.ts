@@ -21,12 +21,12 @@ import { AppComponent } from './app.component';
         CoreModule.forRoot(),
         HomeModule
     ],
-
     declarations: [
         AppComponent
     ],
-
-    bootstrap: [AppComponent],
+    bootstrap: [
+        AppComponent
+    ],
 })
 
 export class AppModule { }

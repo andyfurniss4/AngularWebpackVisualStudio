@@ -7,7 +7,7 @@
   "license": "ISC",
     "repository": {
     "type": "git",
-    "url": "https://github.com/damienbod/Angular2WebpackVisualStudio.git"
+    "url": "https://github.com/damienbod/AngularWebpackVisualStudio.git"
   },
   "scripts": {
     "ngc": "ngc -p ./tsconfig-aot.json",

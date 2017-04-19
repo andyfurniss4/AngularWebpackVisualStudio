@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 using AngularWebpackVisualStudio.Services;
 using AngularWebpackVisualStudio.Configuration;
 
-namespace Angular2WebpackVisualStudio
+namespace AngularWebpackVisualStudio
 {
     public class Startup
     {

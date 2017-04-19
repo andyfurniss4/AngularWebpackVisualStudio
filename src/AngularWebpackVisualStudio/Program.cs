@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Builder;
 
-namespace Angular2WebpackVisualStudio
+namespace AngularWebpackVisualStudio
 {
     public class Program
     {

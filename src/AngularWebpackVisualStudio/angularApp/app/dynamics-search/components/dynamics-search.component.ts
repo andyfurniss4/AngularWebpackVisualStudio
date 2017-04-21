@@ -21,7 +21,7 @@ export class DynamicsSearchComponent {
 
     constructor(private searchService: DynamicsSearchService) { }
 
-    onSubmit() {
+    submitSearch() {
         this.searching = this.searched = true;
         this.searchService.search(this.model)
             .then(results => {

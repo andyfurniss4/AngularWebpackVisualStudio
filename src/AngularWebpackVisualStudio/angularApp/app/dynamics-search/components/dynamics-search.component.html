@@ -1,7 +1,7 @@
 ﻿<div class="container-fluid">
     <h2>Dynamics Data Search</h2>
 
-    <form class="row padded-top col-lg-4" (ngSubmit)="onSubmit()" #searchForm="ngForm">
+    <form class="row padded-top col-lg-4" id="searchForm" (ngSubmit)="submitSearch()" #searchForm="ngForm">
         <div class="form-group">
             <label for="entity">Entity</label>
             <select class="form-control" id="entity" name="entity" required [(ngModel)]="model.entity">
